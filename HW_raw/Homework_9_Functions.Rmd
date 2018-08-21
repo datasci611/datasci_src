@@ -1,0 +1,185 @@
+---
+  title: "BIOS 611 HW9 Functions (Chapter 19)"
+  author: "(Your full name here)"
+  date: "`r format(Sys.time(), '%m/%d/%Y')`"
+  output: html_document
+---
+
+  This set of exercise is mostly taken from R for Data Science by Garrett Grolemund and Hadley Wickham.
+
+# Exercise 1
+
+1.  Read the source code for each of the following three functions, puzzle out
+    what they do, and then brainstorm better names.
+    
+    ```{r}
+    f1 <- function(string, prefix) {
+      substr(string, 1, nchar(prefix)) == prefix
+    }
+    f2 <- function(x) {
+      if (length(x) <= 1) return(NULL)
+      x[-length(x)]
+    }
+    f3 <- function(x, y) {
+      rep(y, length.out = length(x))
+    }
+    ```
+    
+    Answer: 
+
+    ```{r}
+
+    ```
+
+2.  Take a function that you've written recently and spend 5 minutes 
+    brainstorming a better name for it and its arguments.
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+3.  Compare and contrast `rnorm()` and `MASS::mvrnorm()`. How could you make
+    them more consistent? 
+    
+    Answer: 
+
+    ```{r}
+
+    ```
+
+4.  Make a case for why `norm_r()`, `norm_d()` etc would be better than
+    `rnorm()`, `dnorm()`. Make a case for the opposite.
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+# Exercise 2
+
+1.  What's the difference between `if` and `ifelse()`? Carefully read the help
+    and construct three examples that illustrate the key differences.
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+2.  Write a greeting function that says "good morning", "good afternoon",
+    or "good evening", depending on the time of day. (Hint: use a time
+    argument that defaults to `lubridate::now()`. That will make it 
+    easier to test your function.)
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+3.  Implement a `fizzbuzz` function. It takes a single number as input. If
+    the number is divisible by three, it returns "fizz". If it's divisible by
+    five it returns "buzz". If it's divisible by three and five, it returns
+    "fizzbuzz". Otherwise, it returns the number. Make sure you first write 
+    working code before you create the function.
+    
+    Answer: 
+
+    ```{r}
+
+    ```
+
+4.  How could you use `cut()` to simplify this set of nested if-else statements?
+
+    ```{r, eval = FALSE}
+    if (temp <= 0) {
+      "freezing"
+    } else if (temp <= 10) {
+      "cold"
+    } else if (temp <= 20) {
+      "cool"
+    } else if (temp <= 30) {
+      "warm"
+    } else {
+      "hot"
+    }
+    ```
+    
+    How would you change the call to `cut()` if I'd used `<` instead of `<=`?
+    What is the other chief advantage of `cut()` for this problem? (Hint:
+    what happens if you have many values in `temp`?)
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+5.  What happens if you use `switch()` with numeric values?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+6.  What does this `switch()` call do? What happens if `x` is "e"?
+
+    ```{r, eval = FALSE}
+    switch(x, 
+      a = ,
+      b = "ab",
+      c = ,
+      d = "cd"
+    )
+    ```
+    
+    Experiment, then carefully read the documentation. 
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+# Exercise 3
+
+1.  What does `commas(letters, collapse = "-")` do? Why?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+2.  It'd be nice if you could supply multiple characters to the `pad` argument, 
+    e.g. `rule("Title", pad = "-+")`. Why doesn't this currently work? How 
+    could you fix it?
+    
+    Answer: 
+
+    ```{r}
+
+    ```
+
+3.  What does the `trim` argument to `mean()` do? When might you use it?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+4.  The default value for the `method` argument to `cor()` is 
+    `c("pearson", "kendall", "spearman")`. What does that mean? What 
+    value is used by default?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+

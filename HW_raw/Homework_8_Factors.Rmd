@@ -1,0 +1,85 @@
+---
+  title: "BIOS 611 HW8 Factors (Chapter 15)"
+  author: "(Your full name here)"
+  date: "`r format(Sys.time(), '%m/%d/%Y')`"
+  output: html_document
+---
+
+  This set of exercise is mostly taken from R for Data Science by Garrett Grolemund and Hadley Wickham.
+
+### Exercise
+
+1.  Explore the distribution of `rincome` (reported income). What makes the
+    default bar chart hard to understand? How could you improve the plot?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+2.  What is the most common `relig` in this survey? What's the most
+    common `partyid`?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+3.  Which `relig` does `denom` (denomination) apply to? How can you find
+    out with a table? How can you find out with a visualisation?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+# Exercise 2
+
+1.  There are some suspiciously high numbers in `tvhours`. Is the mean a good
+    summary?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+2.  For each factor in `gss_cat` identify whether the order of the levels is
+    arbitrary or principled.
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+3.  Why did moving "Not applicable" to the front of the levels move it to the
+    bottom of the plot?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+# Exercise 3
+
+1.  How have the proportions of people identifying as Democrat, Republican, and
+    Independent changed over time?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+2.  How could you collapse `rincome` into a small set of categories?
+    Answer: 
+
+    ```{r}
+
+    ```
+

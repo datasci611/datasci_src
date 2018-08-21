@@ -1,0 +1,109 @@
+---
+  title: "BIOS 611 HW4 Tibbles (Chapter 10)"
+  author: "(Your full name here)"
+  date: "`r format(Sys.time(), '%m/%d/%Y')`"
+  output: html_document
+---
+
+  This set of exercise is mostly taken from R for Data Science by Garrett Grolemund and Hadley Wickham.
+
+# Exercise 1
+
+1.  How can you tell if an object is a tibble? (Hint: try printing `mtcars`,
+    which is a regular data frame). 
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+2.  Compare and contrast the following operations on a `data.frame` and 
+    equivalent tibble. What is different? Why might the default data frame
+    behaviours cause you frustration?
+    
+    ```{r, eval = FALSE}
+    df <- data.frame(abc = 1, xyz = "a")
+    df$x
+    df[, "xyz"]
+    df[, c("abc", "xyz")]
+    ```
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+3.  If you have the name of a variable stored in an object, e.g. `var <- "mpg"`,
+    how can you extract the reference variable from a tibble?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+4.  Practice referring to non-syntactic names in the following data frame by:
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+    1.  Extracting the variable called `1`.
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+    1.  Plotting a scatterplot of `1` vs `2`.
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+    1.  Creating a new column called `3` which is `2` divided by `1`.
+        
+    Answer: 
+
+    ```{r}
+
+    ```
+
+    1.  Renaming the columns to `one`, `two` and `three`. 
+    
+    ```{r}
+    annoying <- tibble(
+      `1` = 1:10,
+      `2` = `1` * 2 + rnorm(length(`1`))
+    )
+    ```
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+5.  What does `tibble::enframe()` do? When might you use it?
+
+    Answer: 
+
+    ```{r}
+
+    ```
+
+6.  What option controls how many additional column names are printed
+    at the footer of a tibble?
+    Answer: 
+
+    ```{r}
+
+    ```
+
