@@ -186,17 +186,8 @@
 
 6.  Recreate the R code necessary to generate the following graphs.
     
+    ![Smooth lines for each `drv`](`r "https://github.com/datasci611/datasci_src/blob/master/HW1P0306A.png?raw=true"`)
     
-    ![Smooth lines for each `drv`](HW1P0306A.png)
-    
-    Answer: 
-    
-    ```{r, echo=TRUE, eval=TRUE}
-
-    ```
-
-
-    ![A single smooth line, transparency by `year`](HW1P0306B.png)
     
     Answer: 
     
@@ -204,8 +195,17 @@
 
     ```
 
+
+    ![A single smooth line, transparency by `year`](`r "https://github.com/datasci611/datasci_src/blob/master/HW1P0306B.png?raw=true"`)
     
-    ![Layered dots and an additional text information](HW1P0306C.png)
+    Answer: 
+    
+    ```{r, echo=TRUE, eval=TRUE}
+
+    ```
+
+    
+    ![Layered dots and an additional text information](`r "https://github.com/datasci611/datasci_src/blob/master/HW1P0306C.png?raw=true"`)
     
     Adding texts was not covered in class, but give it a try!
     
