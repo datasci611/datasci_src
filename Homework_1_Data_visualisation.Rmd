@@ -4,8 +4,9 @@
   date: "`r format(Sys.time(), '%m/%d/%Y')`"
   output: html_document
 ---
-
-  This set of exercise is mostly taken from R for Data Science by Garrett Grolemund and Hadley Wickham.
+  *This homework is due September 5th 6pm.*
+  
+  (This set of exercise is mostly taken from R for Data Science by Garrett Grolemund and Hadley Wickham.)
 
 # Exercise 1
 
